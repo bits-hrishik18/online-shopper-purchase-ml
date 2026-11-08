@@ -22,5 +22,5 @@ python3 train_models.py --output-dir "$HOME/ml_assignment_run"
 if [ "$1" = "app" ]; then
     python3 -m pip install --user --quiet streamlit matplotlib
     echo "Open http://localhost:8501 in the lab browser (Ctrl+C to stop)."
-    python3 -m streamlit run app.py --server.headless true --server.port 8501
+    python3 -m streamlit run streamlit_app.py --server.headless true --server.port 8501
 fi

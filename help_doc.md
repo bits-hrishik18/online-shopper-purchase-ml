@@ -15,7 +15,7 @@ pip install -r requirements.txt
 | Goal | Command |
 |---|---|
 | Retrain all five models and rewrite `model/`, `test_data.csv`, `metrics.csv` | `python train_models.py` |
-| Start the Streamlit app | `streamlit run app.py` |
+| Start the Streamlit app | `streamlit run streamlit_app.py` |
 
 Retrain in the same environment that will run the app. Saved models are
 pickled scikit-learn pipelines, so a very different scikit-learn version can
@@ -101,7 +101,7 @@ git config user.email "<your personal GitHub email>"
 | 3 | Shared helpers | `utils.py` | `Add feature lists, validation and metric helpers` |
 | 4 | Training scripts | `train_models.py`, `setup_vm.sh` | `Add training script and lab setup script` |
 | 5 | Trained artefacts | `model/` (including `model_info.json`), `test_data.csv`, `metrics.csv` | `Add trained models, test split and metrics` |
-| 6 | Streamlit app | `app.py` | `Add Streamlit app for model evaluation` |
+| 6 | Streamlit app | `streamlit_app.py` | `Add Streamlit app for model evaluation` |
 | 7 | Documentation | `README.md`, `help_doc.md` | `Add README and help doc` |
 | 8 | After deployment | `README.md` | `Add repository and live app links` |
 
@@ -113,7 +113,7 @@ git commit -m "Add gitignore and dependency list"
 ```
 
 Between steps, run the code you just added (for example, run
-`python train_models.py` before commit 5, and `streamlit run app.py` before
+`python train_models.py` before commit 5, and `streamlit run streamlit_app.py` before
 commit 6) so each commit reflects work that actually runs.
 
 Connect and push to your own GitHub repository:
@@ -149,7 +149,7 @@ Steps:
 
 1. Open <https://streamlit.io/cloud> and sign in.
 2. Choose **New app**, select your repository and the `main` branch.
-3. Set the main file to `app.py`, open **Advanced settings**, pick **Python 3.12**, and click **Deploy**.
+3. Set the main file to `streamlit_app.py`, open **Advanced settings**, pick **Python 3.12**, and click **Deploy**.
 4. Open the live link and check that every model loads. Then paste both links
    into `README.md` (commit 8).
 

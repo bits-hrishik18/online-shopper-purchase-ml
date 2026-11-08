@@ -48,7 +48,7 @@ Live Streamlit app: <ADD YOUR STREAMLIT COMMUNITY CLOUD LINK HERE>
 
 ```text
 project-folder/
-|-- app.py               Streamlit app (upload CSV, pick model, see metrics)
+|-- streamlit_app.py     Streamlit app (upload CSV, pick model, see metrics)
 |-- utils.py             shared feature lists and metric helpers
 |-- train_models.py      trains and saves the five models, writes test_data.csv
 |-- requirements.txt
@@ -66,7 +66,7 @@ Run locally:
 ```bash
 pip install -r requirements.txt
 python train_models.py        # optional: regenerates model/, test_data.csv, metrics.csv
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 ## d. Models used
