@@ -44,7 +44,7 @@ appearing in both train and test.
 
 https://github.com/bits-hrishik18/online-shopper-purchase-ml
 
-Live Streamlit app: <ADD YOUR STREAMLIT COMMUNITY CLOUD LINK HERE>
+Live Streamlit app: https://online-shopper-purchase-ml.streamlit.app/
 
 ```text
 project-folder/
